@@ -1,0 +1,124 @@
+In or one line comment: // Text
+Multiple line comment, begins /* Text */ ends
+
+The 8 types of data are
+undefined, null, boolean, string, symbol, bigint, number, and object.
+
+Numbers- ie "12"
+Strings- collections of characters ie "12, cats, 123"
+
+Computers can do mathematical operations on numbers but not on strings.
+
+Variables allow computers to store and manipulate data in a dynamic fashion. 
+They do this by using a "label" to point to the data rather than using the data itself. Any of the eight data types may be stored in a variable.
+
+The setup of declaring a variable is as follows:
+var variablename;
+
+In java statements are ended with semicolons
+
+Variable names can be made up of numbers, letters, or $ or -, but cannot start with a space or a number.
+
+After defining a variable, you can then store a value with the name of that variable as follows.
+var variablename;
+variablename = value;
+
+You can then assign a different, newly defined variable, to a previously defined and valued variable, such as follows:
+var variablename1;
+variablename1= value;
+var variablename2;
+variablename2=variablename1;
+
+It is common to define and value a variable all in the same line as follows
+var variablename = variablevalue;
+
+You can also define variables in things called string variables, which are variables that go in two quotation marks, as follows
+var stringvariable;
+stringvariable = "A string variable";
+    -or-
+var stringvariable = "A string variable";
+
+When variables are initially declared, before being assigned a value, they have a value of undefined.
+If you attempt to do a mathematical operation on an undefined variable, you will get NaN or not a number.
+Doing the same with a string of variables will give you a string of undefined.
+
+VARIABLES AND FUNCTION NAMES ARE CASE SENSITIVE
+Best practice for writing these things is camel case, or camelCase, where the first word is undercase and the first letter of each subsequent word is capitalized.
+  IE
+// Variable declarations
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+
+// Variable assignments
+studlyCapVar = 10;
+properCamelCase = "A String";
+titleCaseOver = 9000;
+
+One of the biggest problems with declaring variables with the var keyword is that you can easily overwrite variable declarations:
+
+var camper = "James";
+var camper = "David";
+console.log(camper);
+In the code above, the camper variable is originally declared as James, and is then overridden to be David. The console then displays the string David.
+In a small application, you might not run into this type of problem. But as your codebase becomes larger, 
+you might accidentally overwrite a variable that you did not intend to. Because this behavior does not throw an error, searching for and fixing bugs becomes more difficult.
+A keyword called let was introduced in ES6, a major update to JavaScript, to solve this potential issue with the var keyword. 
+You'll learn about other ES6 features in later challenges.
+So unlike var, when you use let, a variable with the same name can only be declared once.
+
+The keyword let is not the only new way to declare variables. In ES6, you can also declare variables using the const keyword.
+const has all the awesome features that let has, with the added bonus that variables declared using const are read-only. 
+They are a constant value, which means that once a variable is assigned with const, it cannot be reassigned
+
++ is used to add numbers in JS.
+- is used ti subtract numbers in JS
+* is used to multiply them
+/ is to divide them
+
+++ increments or adds one to the variable
+  IE rather than myvar = myvar + 1;
+  you can do myvar++;
+  
+  same goes for decrements or myvar--;
+  
+  Operations can also be performed on decimals, which are defined as variables as follows;
+  
+  var myDecimal = 2.5;
+  
+  For remainders, it would be formatted as
+  11 % 2;
+  
+  += is a shortcut to modifying a variable, addition wise
+  so instead of 
+  var myvar = 1;
+  myvar = myvar + 5;
+  
+  you could do 
+  varmyvar = 1;
+  myvar += 5;
+  
+  Same formatting goes for subtraction, but with a minus sign instead. (-=)
+  Multiplying (*=)
+  Division (/=)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
